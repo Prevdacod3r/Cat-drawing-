@@ -1,0 +1,45 @@
+import turtle
+
+def draw_cat():
+    window = turtle.Screen()
+    window.bgcolor("lightblue")
+
+    # Draw face
+    face = turtle.Turtle()
+    face.penup()
+    face.goto(0,-100)
+    face.pendown()
+    face.circle(100)
+
+    # Draw left eye
+    left_eye = turtle.Turtle()
+    left_eye.penup()
+    left_eye.goto(-30, -20)
+    left_eye.pendown()
+    left_eye.circle(10)
+
+    # Draw right eye
+    right_eye = turtle.Turtle()
+    right_eye.penup()
+    right_eye.goto(30, -20)
+    right_eye.pendown()
+    right_eye.circle(10)
+
+    # Draw nose
+    nose = turtle.Turtle()
+    nose.penup()
+    nose.goto(0, -50)
+    nose.pendown()
+    nose.circle(5)
+
+    # Draw mouth
+    mouth = turtle.Turtle()
+    mouth.penup()
+    mouth.goto(-30, -70)
+    mouth.pendown()
+    mouth.right(90)
+    mouth.circle(30, 180)
+
+    window.mainloop()
+
+draw_cat()
